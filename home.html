@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-6.5.1" crossorigin="anonymous" />
+    <style>
+        .navbar-brand{position: relative;}
+        .navbar-brand:hover::after{
+            background-color:rgb(165, 75, 129) ;
+            position: absolute;
+            content: '';height: 2px;width: 100%;bottom: 0;left: 0;
+        }
+        .nav-link{
+            position: relative;
+            color: black;
+        }
+        .nav-link:hover::after{
+            background-color: rgb(165, 75, 129);position: absolute;
+            content: '';
+            height: 2px;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+        }
+        body{
+          padding-top: 56px;
+        }
+        
+        .process-item {
+            margin-bottom: 10px; /* Adjust the margin between cards */
+        }
+        
+        .process-item .card-title {
+            color:rgb(131, 79, 5);; /* Color for card titles */
+        }
+        /* CSS for Hover Effect */
+.card:hover {
+    transform: translateY(-5px); /* Move the card up slightly on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    background-color: rgba(131, 79, 5, 0.1);
+}
+
+    
+    </style>
+</head>
+<body>
+    <!-- Navbar-->
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: white;">
+        <div class="container-fluid " >
+          <a class="navbar-brand " href="#  ">SR HOME INTERIORS</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarNav" >
+            <ul class="navbar-nav" >
+              <li class="nav-item " >
+                <a class="nav-link " aria-current="page" href="#" style="color: black;">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="contact.html" style="color: black;">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="about.html" style="color: black;">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+
+      <div class="container-fluid">
+        <div class="row" style="background-image: url( images/11.jpg); background-size: cover; background-repeat: no-repeat;height:650px;overflow:hidden">
+        <div class="row d-flex align-items-center carousel" >
+          <div class="col-md-6 fix">
+            <h1 class="text-white">TRANSFORM YOUR HOME WITH US</h1>
+            <h1 class="text-white">WITH AWESOME INTERIORS AND BUDGET FRIENDLY</h1>
+          </div>
+          <div class="col-md-6">
+            <div class="container-fluid" >
+                <div class="row">
+                    <div class="col-md-4 mx-auto shadow w-75 ">
+                      
+                      <form method="POST" action="quote" style="padding: 40px;">
+                        <h4 style="text-align: center;"><span style="color: rgb(239, 237, 236);font-weight: bold;background-color: black;border-radius: 20px;">Contact Us</span></h4>
+                        <div class="mt-3">
+                            <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="name" placeholder="NAME">
+                        </div>
+                        <div class="mt-3">
+                            <input type="EMAIL" class="form-control" id="exampleInputPassword1" name="email" placeholder="EMAIL">
+                        </div>
+                        <div class="mt-3">
+                            <input type="tel" class="form-control" id="exampleInputPassword1" name="number" placeholder="PHONE NUMBER">
+                        </div>
+                        <div class="mt-3">
+                            <select class="form-control" id="residenceType" name="residence_type">
+                                <option value="">Select Residence Type</option>
+                                <option value="apartment">Apartment</option>
+                                <option value="villa">Villa</option>
+                                <option value="bungalow">Bungalow</option>
+                                <option value="independent_house">Independent House</option>
+                            </select>
+                        </div>
+                        <div class="mt-3">
+                            <select class="form-control" id="bedrooms" name="bedrooms">
+                                <option value="">Select Number of Bedrooms</option>
+                                <option value="1BHK">1 BHK</option>
+                                <option value="2BHK">2 BHK</option>
+                                <option value="3BHK">3 BHK</option>
+                                <option value="4BHK">4 BHK</option>
+                            </select>
+                        </div>
+                        <input type="submit" value="GET QUOTE" name="" id="" class="btn btn-danger w-100 mt-3">
+                    </form>
+                    
+            </div>
+        </div>
+        </div>
+          </div>
+        </div>
+      </div> 
+    </div> 
+    </div>
+    
+    <section class="section mt-1" style="padding: 20px;">
+      <div class="container mx-auto">
+          <div class="row">
+              <div class="col-md-12 text-center">
+                  <h2>The One-Stop Shop For All Your Home Decor Needs</h2>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-md-3">
+                  <div class="card mb-4 shadow-sm text-truncate">
+                      <img src="images/11.jpg" class="card-img-top mx-auto d-block" alt="Reason 1 Image">
+                      <div class="card-body text-center">
+                          <h4>Luxury Interiors</h4>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="card mb-4 shadow-sm">
+                      <img src="images/11.jpg" class="card-img-top mx-auto d-block" alt="Reason 2 Image">
+                      <div class="card-body text-center">
+                          <h4>Renovations</h4>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="card mb-4 shadow-sm">
+                      <img src="images/11.jpg" class="card-img-top mx-auto d-block" alt="Reason 3 Image">
+                      <div class="card-body text-center">
+                          <h4>Commercial Interiors</h4>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card mb-4 shadow-sm">
+                    <img src="images/11.jpg" class="card-img-top mx-auto d-block" alt="Reason 3 Image">
+                    <div class="card-body text-center">
+                        <h4>Furniture & Decor</h4>
+                    </div>
+                </div>
+            </div>
+          </div>
+      </div>
+    </section>
+    
+    
+    <section class="our-process-section mt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center heading">Our Process</h1>
+                    <p class="text-center heading">At Our Company, we follow a structured process to ensure that your project is executed smoothly and meets your expectations.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card process-item">
+                        <div class="card-body">
+                            <h4 class="card-title">Client Discussion</h4>
+                            <p class="card-text">Meetings with the client to know their specifications, requirements, and demands.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card process-item">
+                        <div class="card-body">
+                            <h4 class="card-title">Site Visit</h4>
+                            <p class="card-text">Visiting the site and analyzing the place and taking measurements of the required area.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card process-item">
+                        <div class="card-body">
+                            <h4 class="card-title">Theme/Style Selection</h4>
+                            <p class="card-text">Selecting a theme/style which suits the client and their needs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card process-item">
+                        <div class="card-body">
+                            <h4 class="card-title">Concept</h4>
+                            <p class="card-text">Make conceptual drawings and create renders by considering all requirements.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card process-item">
+                        <div class="card-body">
+                            <h4 class="card-title">Estimate</h4>
+                            <p class="card-text">An estimate with the specified budget will be presented with the detailed pricing.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card process-item">
+                        <div class="card-body">
+                            <h4 class="card-title">Execution</h4>
+                            <p class="card-text">Once the estimate is approved, the execution starts where we turn your dream home into reality.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    
+    
+    <section class="complete-interior-solutions mt-3">
+        <div class="container">
+            <div class="row">
+                <h1 class="text-center">Complete Interior Solutions at One Place</h1>
+                <div class="col-md-4 card">
+                    <div class="icon" style="font-size: 48px;">
+                        <i class="fas fa-utensils"></i> 
+                    </div>
+                    <h3>Modular Kitchen</h3>
+                </div>
+                <div class="col-md-4 card">
+                    <div class="icon" style="font-size: 48px;">
+                        <i class="fas fa-cube"></i> 
+                    </div>
+                    <h3>Crockery Unit</h3>
+                </div>
+                <div class="col-md-4 card">
+                    <div class="icon" style="font-size: 48px;">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <h3>Wardrobes</h3>
+                </div>
+                <div class="col-md-4 card">
+                    <div class="icon" style="font-size: 48px;">
+                        <i class="fas fa-tv"></i> 
+                    </div>
+                    <h3>TV Units</h3>
+                </div>
+                <div class="col-md-4 card">
+                    <div class="icon" style="font-size: 48px;">
+                        <i class="fas fa-paint-brush" ></i>
+                    </div>
+                    <h3>Painting</h3>
+                </div>
+                <div class="col-md-4 card">
+                    <div class="icon" style="font-size: 48px;">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3>Study Tables</h3>
+                </div>
+            </div>
+        </div>  
+    </section>
+
+
+    <div class="text-center">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+            SR HOME INTERIORS
+        </button></div>
+    
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="myModalLabel">SR HOME INTERIORS</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Thank You For Visiting Us
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <footer class="footer  bg-light text-dark py-3 mt-2">
+        <div class="container-fluid w-100">
+            <div class="row ">
+                <div class="col-md-2 d-flex align-items-center">
+                   
+                    <p style="font-size: 20px;">&copy; SR HOME INTERIORS</p>
+                </div>
+                <div class="col-md-4 " style="text-align: center;">
+                    <p style="font-size: 20px;">Contact Us</p>
+                    <a href="#" class="text-dark" style="font-size: 30px;"><i class="bi bi-facebook p-3"></i></a>
+                    <a href="#" class="text-dark"  style="font-size: 30px;"><i class="bi bi-whatsapp p-3"></i></a>
+                    <a href="#" class="text-dark"  style="font-size: 30px;"><i class="bi bi-instagram p-3"></i></a>
+                    <a href="mailto:your@email.com" class="text-dark"  style="font-size: 30px;"><i class="bi bi-envelope p-3"></i></a>
+                </div>
+                <div class="col-md-6 "style="text-align: center;">
+                    <p style="font-size: 30px;">Quick Links</p>
+                    <a href="about.html" class="text-dark ">About Us</a><br>
+                    <a href="contact.html" class="text-dark ">Contact Us</a><br>
+                    <a href="#" class="text-dark ">Home</a>
+                </div>
+            </div>
+        </div>
+    </footer>   
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   
+    <script src="js/bootstrap.min.js"></script>
+      <script src="js/popper.js"></script>
+</body>
+</html>
